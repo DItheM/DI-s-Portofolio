@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Stylesheets/connect.css">
+    <link rel="stylesheet" href="./Stylesheets/loader.css">
+    <link rel="stylesheet" href="./Stylesheets/page_transition.css">
+    <link rel="stylesheet" href="./Stylesheets/root.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>DI's Portofolio</title>
+</head>
+
+<body>
+    <div id="bg-secondary">
+        <!-- loader -->
+        <div class="loader">
+            <div id="loader-backdrop">
+                <div class="background"></div>
+                <div class="loading-circle"></div>
+                <p class="loading">Loading</p>
+                <div class="loading-blocks">
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- profile + nav -->
+        <section class="profile">
+            <div class="secondary-circle"></div>
+            <div id="primary-circle"></div>
+            <img id="profile-picture" src="./Assets/profile_picture.png" alt="Profile Picture">
+            <div id="profile-growing-glow"></div>
+            <img id="profile-glow" src="./Assets/profile-glow.png" alt="Profile Glow">
+
+            <nav>
+                <div class="nav-options">
+                    <a onclick="pageLoad(); setTimeout(projectsLink, 1000);" href="#" title="Projects">
+                        <svg id="projects">
+                            <use href="#projects-logo"></use>
+                        </svg>
+                    </a>
+                    <a onclick="pageLoad(); setTimeout(skillsLink, 1000);" href="#" title="Skills">
+                        <svg id="skills">
+                            <use href="#skills-logo"></use>
+                        </svg>
+                    </a>
+                    <a onclick="pageLoad(); setTimeout(homeLink, 1000);" href="#">
+                        <svg id="home" title="Home">
+                            <use href="#home-logo"></use>
+                        </svg>
+                    </a>
+                    <a onclick="pageLoad(); setTimeout(aboutLink, 1000);" href="#" title="About">
+                        <svg id="about">
+                            <use href="#about-logo"></use>
+                        </svg>
+                    </a>
+                    <!-- <a onclick="pageLoad(); setTimeout(connectLink, 1000);" href="#" title="Connect"> -->
+                    <svg id="connect">
+                        <use href="#connect-logo"></use>
+                    </svg>
+                    <!-- </a> -->
+                </div>
+            </nav>
+        </section>
+
+        <!-- content -->
+
+        <section class="intro">
+            <div class="header">
+                <p id="header-name">CONNECT WITH ME</p>
+                <svg id="header-logo">
+                    <use href="#connect-logo"></use>
+                </svg>
+            </div>
+            <footer>
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/dyaan-ipalawatta-346828216/" target="_blank" title="Linkedin">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.behance.net/dithem" target="_blank" title="Behance">
+                        <i class="fa fa-behance" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://github.com/DItheM" target="_blank" title="GitHub">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="mailto:d.ipalawatta@gmail.com" target="_blank" title="Gmail">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </footer>
+        </section>
+
+
+    </div>
+
+    <script src="./JS/loader.js"></script>
+    <script src="./JS/page_transition.js"></script>
+
+
+    <!-- SVG's -->
+    <!-- home -->
+    <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="home-logo" viewBox="0 0 40 40">
+            <circle cx="20" cy="20" r="5" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M20 30.6673C25.8911 30.6673 30.6667 25.8917 30.6667 20.0007C30.6667 14.1096 25.8911 9.33398 20 9.33398C14.109 9.33398 9.33337 14.1096 9.33337 20.0007C9.33337 25.8917 14.109 30.6673 20 30.6673ZM20 31.6673C23.0062 31.6673 25.7468 30.5303 27.8153 28.6629L27.8254 28.6733L30.1824 31.0303C30.4167 31.2647 30.7966 31.2647 31.031 31.0303C31.2653 30.796 31.2653 30.4161 31.031 30.1818L28.6739 27.8248L28.6635 27.8146C30.5302 25.7463 31.6667 23.0062 31.6667 20.0007C31.6667 16.9945 30.5297 14.2539 28.6624 12.1854L28.6739 12.1742L31.031 9.81715C31.2653 9.58283 31.2653 9.20293 31.031 8.96862C30.7966 8.7343 30.4167 8.7343 30.1824 8.96862L27.8254 11.3256L27.8141 11.3373C25.7457 9.47052 23.0056 8.33398 20 8.33398C16.9945 8.33398 14.2544 9.4705 12.1861 11.3372L12.1748 11.3256L9.81776 8.96862C9.58344 8.7343 9.20354 8.7343 8.96923 8.96862C8.73491 9.20293 8.73491 9.58283 8.96923 9.81715L11.3263 12.1742L11.3378 12.1854C9.47036 14.2539 8.33337 16.9945 8.33337 20.0007C8.33337 23.0062 9.4699 25.7463 11.3366 27.8147C11.3331 27.818 11.3297 27.8214 11.3263 27.8248L8.96923 30.1818C8.73491 30.4161 8.73491 30.796 8.96923 31.0303C9.20354 31.2647 9.58344 31.2647 9.81776 31.0303L12.1748 28.6733C12.1782 28.6699 12.1816 28.6665 12.1849 28.663C14.2533 30.5304 16.9939 31.6673 20 31.6673Z"
+                fill="#7E869E" fill-opacity="0.25" />
+        </symbol>
+    </svg>
+
+    <!-- connect -->
+    <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="connect-logo" viewBox="0 0 30 30">
+            <path
+                d="M21.2053 6.26491L12.1429 9.28571C8.92359 10.3588 7.31395 10.8953 6.9688 11.7542C6.77647 12.2328 6.77647 12.7672 6.9688 13.2458C7.31395 14.1046 8.92358 14.6412 12.1428 15.7143L12.1429 15.7143C12.7871 15.929 13.1093 16.0364 13.369 16.2312C13.5205 16.3449 13.6551 16.4795 13.7688 16.631C13.9636 16.8907 14.071 17.2129 14.2857 17.8571C15.3588 21.0764 15.8953 22.686 16.7542 23.0312C17.2328 23.2235 17.7672 23.2235 18.2458 23.0312C19.1047 22.686 19.6412 21.0764 20.7143 17.8571L23.7351 8.79473C24.287 7.13894 24.563 6.31105 24.126 5.87403C23.689 5.43702 22.8611 5.71298 21.2053 6.26491Z" />
+        </symbol>
+    </svg>
+
+    <!-- about -->
+    <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="about-logo" viewBox="0 0 30 30">
+            <circle cx="15" cy="15" r="11.25" />
+            <path
+                d="M15 10.1C15.4004 10.1 15.725 9.77541 15.725 9.375C15.725 8.97459 15.4004 8.65 15 8.65C14.5996 8.65 14.275 8.97459 14.275 9.375C14.275 9.77541 14.5996 10.1 15 10.1Z" />
+            <path d="M15 21.25V12.5" />
+        </symbol>
+    </svg>
+
+    <!-- projects -->
+    <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="projects-logo" viewBox="0 0 30 30">
+            <path
+                d="M15 25L5.6797 13.3496C5.34718 12.934 5.18092 12.7262 5.13625 12.4757C5.09159 12.2252 5.17575 11.9728 5.34407 11.4678L6.5883 7.73509C7.02832 6.41505 7.24832 5.75503 7.7721 5.37752C8.29587 5 8.99159 5 10.383 5H19.617C21.0084 5 21.7041 5 22.2279 5.37752C22.7517 5.75503 22.9717 6.41505 23.4117 7.73509L24.6559 11.4678C24.8243 11.9728 24.9084 12.2252 24.8637 12.4757C24.8191 12.7262 24.6528 12.934 24.3203 13.3496L15 25ZM15 25L19.375 11.25M15 25L10.625 11.25M24.375 12.5L19.375 11.25M19.375 11.25L17.5 6.25M19.375 11.25H10.625M12.5 6.25L10.625 11.25M10.625 11.25L5.625 12.5" />
+        </symbol>
+    </svg>
+
+    <!-- skills -->
+    <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="skills-logo" viewBox="0 0 30 30">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M15 26.25C21.2132 26.25 26.25 21.2132 26.25 15C26.25 8.7868 21.2132 3.75 15 3.75C8.7868 3.75 3.75 8.7868 3.75 15C3.75 21.2132 8.7868 26.25 15 26.25ZM12.1867 17.25H14.5C14.7357 17.25 14.8536 17.25 14.9268 17.3232C15 17.3964 15 17.5143 15 17.75V21.8579C15 22.6169 15 22.9965 15.1861 23.0456C15.3723 23.0948 15.5597 22.7648 15.9347 22.1049L19.5523 15.738C20.3076 14.4087 20.6852 13.744 20.396 13.247C20.1067 12.75 19.3423 12.75 17.8133 12.75H15.5C15.2643 12.75 15.1464 12.75 15.0732 12.6768C15 12.6036 15 12.4857 15 12.25V8.14213C15 7.38307 15 7.00355 14.8139 6.95436C14.6277 6.90517 14.4403 7.23516 14.0653 7.89512L10.4477 14.262C9.69244 15.5913 9.31479 16.256 9.60403 16.753C9.89327 17.25 10.6577 17.25 12.1867 17.25Z" />
+            <path
+                d="M14.5 17.25H12.1867C10.6577 17.25 9.89327 17.25 9.60403 16.753C9.31479 16.256 9.69244 15.5913 10.4477 14.262L14.0653 7.89512C14.4403 7.23516 14.6277 6.90517 14.8139 6.95436C15 7.00354 15 7.38307 15 8.14213V12.25C15 12.4857 15 12.6036 15.0732 12.6768C15.1464 12.75 15.2643 12.75 15.5 12.75H17.8133C19.3423 12.75 20.1067 12.75 20.396 13.247C20.6852 13.744 20.3076 14.4087 19.5523 15.738L15.9347 22.1049C15.5597 22.7648 15.3723 23.0948 15.1861 23.0456C15 22.9965 15 22.6169 15 21.8579V17.75C15 17.5143 15 17.3964 14.9268 17.3232C14.8536 17.25 14.7357 17.25 14.5 17.25Z" />
+            <circle cx="15" cy="15" r="11.25" />
+        </symbol>
+    </svg>
+
+
+
+
+</body>
+
+</html>

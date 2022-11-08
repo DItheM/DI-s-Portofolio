@@ -1,0 +1,46 @@
+.disabled {
+    pointer-events: none;
+    animation: profile-fade 1000ms linear forwards;
+}
+
+@keyframes profile-fade {
+    100% {
+        opacity: 0;
+    }
+}
+
+.page-load-secondary-circle {
+    animation: page-load-animation 1000ms forwards linear;
+}
+
+
+
+@keyframes page-load-animation {
+    from {
+        transform: scale(1.3) rotate(0deg);
+    }
+
+    to {
+        transform: scale(1.2) rotate(3500deg);
+    }
+}
+
+@keyframes text-end {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes de-vanish {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

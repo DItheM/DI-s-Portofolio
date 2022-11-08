@@ -381,9 +381,36 @@ a {
 .backdrop {
     margin-top: 18px;
     background: linear-gradient(rgba(204, 255, 165, 0.3), rgba(0, 0, 0, 0));
-    border-top: 1px solid rgb(163, 255, 183);
+    border-top: 2px solid rgb(163, 255, 183);
     display: flex;
+    animation: blink-animation 10s infinite both;
 
+}
+
+@keyframes blink-animation {
+    0% {
+        border-color: rgb(163, 255, 183);
+    }
+
+    20% {
+        border-color: rgb(163, 244, 255);
+    }
+
+    40% {
+        border-color: rgb(221, 163, 255);
+    }
+
+    60% {
+        border-color: rgb(155, 132, 255);
+    }
+
+    80% {
+        border-color: rgb(152, 179, 255);
+    }
+
+    100% {
+        border-color: rgb(163, 255, 183);
+    }
 }
 
 .paragraph {

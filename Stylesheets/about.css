@@ -397,3 +397,11 @@ a {
 #left-set {
     padding: 5% 0;
 }
+
+#right-set {
+    margin-right: 3%;
+}
+
+#left-set {
+    margin-left: 3%;
+}

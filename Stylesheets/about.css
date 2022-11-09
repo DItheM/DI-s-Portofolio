@@ -420,18 +420,24 @@ a {
     padding: 35px 10px;
 }
 
+/* Arrow Sets */
+
 #right-set,
 #left-set {
     padding: 5% 0;
+    width: 280px;
 }
 
 #right-set {
-    margin-right: 3%;
+    margin-right: -20px;
 }
 
 #left-set {
-    margin-left: 3%;
+    margin-left: -20px;
 }
+
+/* Left Arrow */
+/* L-Top */
 
 #l3,
 #l2,
@@ -458,6 +464,8 @@ a {
     }
 }
 
+/* L-Bottom */
+
 #l4,
 #l5,
 #l6 {
@@ -479,6 +487,62 @@ a {
 
     100% {
         transform: translateX(50px);
+        opacity: 0;
+    }
+
+}
+
+/* Right Arrow */
+/* R-Top */
+
+#r3,
+#r2,
+#r1 {
+    animation: R-top 2s infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+@keyframes R-top {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+}
+
+/* R-Bottom */
+
+#r4,
+#r5,
+#r6 {
+    animation: R-bottom 2s infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+@keyframes R-bottom {
+    0% {
+        opacity: 0;
+        transform: rotate(-45deg);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50px);
         opacity: 0;
     }
 

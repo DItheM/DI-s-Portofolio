@@ -418,6 +418,9 @@ a {
     color: white;
     font-size: var(--font-mid2);
     padding: 35px 10px;
+    border-width: 0 1px 0 1px;
+    border-style: solid;
+    animation: arrow-border-animation 2s infinite;
 }
 
 /* Arrow Sets */
@@ -426,6 +429,7 @@ a {
 #left-set {
     padding: 5% 0;
     width: 280px;
+    height: fit-content;
 }
 
 #right-set {
@@ -434,6 +438,26 @@ a {
 
 #left-set {
     margin-left: -20px;
+}
+
+@keyframes arrow-border-animation {
+    0% {
+        border-color: #80ffca00;
+        /* border-radius: 100%; */
+    }
+
+    50% {
+        border-color: #80ffcaaf;
+    }
+
+    75% {
+        border-color: #88bcffaf;
+    }
+
+    100% {
+        border-color: #80ffca00;
+        /* border-radius: 0; */
+    }
 }
 
 /* Left Arrow */

@@ -365,6 +365,8 @@ a {
 
 footer {
     display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
 }
 
 .level1,
@@ -375,6 +377,19 @@ footer {
     height: var(--skill-height);
     width: var(--skill-width);
     border-radius: 100%;
+    margin-left: 10px;
+}
+
+.level1,
+.level3,
+.level5 {
+    animation: levels-left-rotate 3s infinite linear;
+}
+
+.level2,
+.level4 {
+    animation: levels-right-rotate 3s infinite linear;
+    animation-delay: 1s;
 }
 
 .level1 {
@@ -407,4 +422,59 @@ table p {
     font-size: var(--font-mid1);
     font-weight: bold;
     color: white;
+}
+
+@keyframes levels-left-rotate {
+    0% {
+        transform: rotate(0deg);
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(-360deg);
+        opacity: 0.5;
+    }
+}
+
+@keyframes levels-right-rotate {
+    0% {
+        transform: rotate(0deg);
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        opacity: 0.5;
+    }
+}
+
+tr:nth-child(1),
+tr:nth-child(2),
+tr:nth-child(3),
+tr:nth-child(4) {
+    transition: all 200ms;
+}
+
+tr:nth-child(1):hover {
+    transform: scale(1.3);
+}
+
+tr:nth-child(2):hover {
+    transform: scale(1.3);
+}
+
+tr:nth-child(3):hover {
+    transform: scale(1.3);
+}
+
+tr:nth-child(4):hover {
+    transform: scale(1.3);
 }

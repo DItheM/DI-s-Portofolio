@@ -399,4 +399,12 @@ footer {
 
 .levels {
     display: flex;
+    margin-top: 15px;
+    padding-left: 50px;
+}
+
+table p {
+    font-size: var(--font-mid1);
+    font-weight: bold;
+    color: white;
 }

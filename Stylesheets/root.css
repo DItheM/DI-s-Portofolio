@@ -25,6 +25,10 @@
 
     /* icon-sizes */
     --nav-icon-size: 40px;
+
+    /* skill-level-sizes */
+    --skill-width: 31px;
+    --skill-height: 31px;
 }
 
 * {

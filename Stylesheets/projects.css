@@ -368,3 +368,131 @@ footer {
     width: 100%;
     margin-top: 30px;
 }
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 15%;
+    padding-bottom: 50px;
+}
+
+.project {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 10px;
+    border: 1px solid #7bffb900;
+    transition: all 500ms;
+}
+
+.bg {
+    background-color: #ccd2e300;
+    height: 100%;
+    border-radius: 10px;
+    transition: all 500ms;
+}
+
+.details {
+    padding-left: 15px;
+    position: absolute;
+    bottom: 0;
+    max-width: 300px;
+    opacity: 0;
+    transition: all 500ms;
+}
+
+.name {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.type {
+    color: #00FF47;
+    font-size: 16px;
+}
+
+.project:hover {
+    transform: scale(1.1);
+    border: 1px solid #7BFFB8;
+    cursor: pointer;
+}
+
+.project:hover .bg {
+    background-color: rgba(0, 0, 0, 0.596);
+}
+
+.project:hover .details {
+    opacity: 1;
+    bottom: 10px;
+}
+
+.project:active .bg {
+    background-color: rgb(151, 151, 151);
+}
+
+.i1 {
+    background-image: url('../Assets/pearlOfTheIndianOcean.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.i2 {
+    background-image: url('../Assets/healthCareApp.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.i3 {
+    background-image: url('../Assets/temperatureConverterNew.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.i4 {
+    background-image: url('../Assets/passwordValidatorNew.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.i5 {
+    background-image: url('../Assets/cabService.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.details-more {
+    padding: 25% 0;
+    text-align: center;
+}
+
+.more {
+    border: 1px solid white;
+    animation: border-flicker 2s infinite;
+}
+
+.more:hover {
+    animation-play-state: paused;
+    background-color: rgba(0, 0, 0, 0.596);
+}
+
+.more:active {
+    background-color: rgb(151, 151, 151);
+}
+
+@keyframes border-flicker {
+    0% {
+        border-color: white;
+    }
+
+    50% {
+        border-color: rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        border-color: white;
+    }
+
+}

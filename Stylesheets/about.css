@@ -310,7 +310,7 @@ a {
 }
 
 #connect:active {
-    fill-opacity: 0.5;
+    fill-opacity: 1;
 }
 
 @keyframes nav-hover-blip {

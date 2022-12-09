@@ -365,8 +365,15 @@ a {
 
 footer {
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 50px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px 10%
+}
+
+.none {
+    height: var(--skill-height);
+    width: var(--skill-width);
+    margin-left: 10px;
 }
 
 .level1,
@@ -422,6 +429,7 @@ table p {
     font-size: var(--font-mid1);
     font-weight: bold;
     color: white;
+    min-width: 120px;
 }
 
 @keyframes levels-left-rotate {

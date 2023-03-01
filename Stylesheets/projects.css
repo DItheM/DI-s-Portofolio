@@ -413,6 +413,11 @@ footer {
     font-size: 16px;
 }
 
+.status {
+    color: rgb(255, 179, 179);
+    font-size: 12px;
+}
+
 .project:hover {
     transform: scale(1.1);
     border: 1px solid #7BFFB8;
@@ -458,6 +463,12 @@ footer {
 
 .i5 {
     background-image: url('../Assets/cabService.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.i6 {
+    background-image: url('../Assets/icon1.png');
     background-size: cover;
     background-position: center;
 }

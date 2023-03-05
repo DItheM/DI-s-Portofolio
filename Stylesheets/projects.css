@@ -473,6 +473,12 @@ footer {
     background-position: center;
 }
 
+.i7 {
+    background-image: url('../Assets/Park\ App\ Logo.png');
+    background-size: cover;
+    background-position: center;
+}
+
 
 .details-more {
     padding: 25% 0;
